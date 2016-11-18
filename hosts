@@ -1,0 +1,11 @@
+[loadbalancer]
+lb-server-ip      ansible_user=ec2-user  ansible_ssh_private_key_file=keys/key.pem
+
+[webserver]
+54.154.160.74     ansible_user=ec2-user  ansible_ssh_private_key_file=keys/key.pem
+
+[database]
+54.154.160.74     ansible_user=ec2-user  ansible_ssh_private_key_file=keys/key.pem
+
+[control]
+control ansible_connection=local
